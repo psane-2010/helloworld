@@ -12,4 +12,11 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            emailext body: 'A Test EMail',
+            recipientProviders: 'sanepriya1982@gmail.com',
+            subject: 'Test'
+        }
+    }
 }
