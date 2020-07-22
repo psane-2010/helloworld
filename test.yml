@@ -1,0 +1,6 @@
+---
+
+- hosts: localhost
+  tasks:
+  - name: Test one
+    command: echo 'Test Ansible'

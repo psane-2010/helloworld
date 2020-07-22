@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'echo Build test'
+                sh ansible-playbook test.yml
             }
         }
         stage('test') {
