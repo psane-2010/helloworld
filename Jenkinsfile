@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'echo Build test'
-                sh ansible-playbook test.yml
+                ansiblePlaybook colorized: true, installation: 'Ansible',playbook: 'test.yml'
             }
         }
         stage('test') {
